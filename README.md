@@ -1,16 +1,96 @@
-# React + Vite
+# NexTask ✅
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React-based task management application built to help you stay organized 
+and productive — with persistent storage, progress tracking, and a clean, 
+responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Features
 
-## React Compiler
+- **Task Input Form** — Add tasks via an input field with a submit button;
+  validates input to prevent empty or duplicate entries.
+- **Task List** — Displays tasks dynamically with their name and completion 
+  status; mark tasks complete or delete them instantly.
+- **Persistent Storage** — Uses `localStorage` to save tasks so they remain 
+  even after refreshing the page.
+- **Progress Tracker** — Visual tracker showing the percentage of tasks 
+  completed, updating dynamically as tasks change.
+- **Task History** — View completed tasks, with options to restore or 
+  permanently delete them.
+- **Responsive Design** — Adapts smoothly to desktops, tablets, and mobiles.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+| Category         | Technology              |
+|------------------|-------------------------|
+| Frontend         | React.js                |
+| Data Storage     | localStorage            |
+| Version Control  | Git & GitHub            |
+| Deployment       | GitHub Pages / Netlify  |
+
+---
+
+## 📦 Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js & npm](https://nodejs.org/) — to manage dependencies and run the app
+- [Visual Studio Code](https://code.visualstudio.com/) — or any code editor
+- Google Chrome or any modern browser
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/taskbuddy.git
+cd taskbuddy
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the App Locally
+
+```bash
+npm run dev
+```
+
+Open your browser and go to `http://localhost:5173`
+
+---
+
+## 🧪 Running Tests
+
+```bash
+npm run test
+```
+
+> Built and tested using **Vitest** as part of the Mastering Vitest module.
+
+---
+
+## 🌐 Deployment
+
+### Deploy to GitHub Pages
+
+```bash
+npm run build
+npm run deploy
+```
+
+### Deploy to Netlify
+
+Connect your GitHub repo to [Netlify](https://netlify.com) and set the 
+build command to `npm run build` with publish directory as `dist`.
+
+---
+
